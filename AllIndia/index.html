@@ -1,0 +1,3320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <link rel="stylesheet" href="/css/header-footer.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <title>Home page</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- nav -->
+  <header>
+    <div id="nav" class="sticky">
+      <div class="nav-top-section">
+        <div class="nav-top-section-container container d-flex justify-content-between align-items-center">
+          <div id="date"></div>
+
+          <div class="">
+            <div class="row">
+              <div class="col-md-6">English</div>
+              <div class="col-md-6">Hindi</div>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="row">
+              <div class="d-flex">
+                <div class="col p-1">
+                  <img src="/svg/nav-apple.svg" alt="icon" />
+                </div>
+                <div class="col p-1">
+                  <img src="/svg/nav-playstore.svg" alt="icon" />
+                </div>
+                <div class="col p-1">
+                  <img src="/svg/nav-fb.svg" alt="icon" />
+                </div>
+                <div class="col p-1">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <div class="col p-1">
+                  <img src="/svg/nav-youtube.svg" alt="icon" />
+                </div>
+                <div class="col p-1">
+                  <img src="/svg/nav-insta.svg" alt="icon" />
+                </div>
+                <div class="p-1 nav-button">
+                  <button class="border-0">Sign in</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-middle-section">
+        <div class="nav-middle-section-container container">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="empty-div"></div>
+            <div class="nav-logo-container container justify-content-center">
+              <img src="/images/sitelogo.png" alt="logo" />
+            </div>
+
+            <!-- off canvas -->
+            <button class="hamburger-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample">
+              <img class="hamburger" src="/svg/hamburger.svg" alt="icon" />
+            </button>
+
+            <div class="sidebar">
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                  <div class="offcanvas-heading" id="offcanvasExampleLabel">
+                    <div class="navbar-logo">
+                      <a class="navbar-brand" href="#">
+                        <img src="/images/sitelogo.png" alt="logo" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="offcanvas-btns">
+                    <div class="nav-top-section-container container d-flex justify-content-between align-items-center">
+                      <div id="date"></div>
+
+                      <div class="">
+                        <div class="row">
+                          <div class="col-md-6">English</div>
+                          <div class="col-md-6">Hindi</div>
+                        </div>
+                      </div>
+
+                      <div class="">
+                        <div class="row">
+                          <div class="d-flex">
+                            <div class="col p-1">
+                              <img src="/svg/nav-apple.svg" alt="icon" />
+                            </div>
+                            <div class="col p-1">
+                              <img src="/svg/nav-playstore.svg" alt="icon" />
+                            </div>
+                            <div class="col p-1">
+                              <img src="/svg/nav-fb.svg" alt="icon" />
+                            </div>
+                            <div class="col p-1">
+                              <i class="fa-brands fa-x-twitter"></i>
+                            </div>
+                            <div class="col p-1">
+                              <img src="/svg/nav-youtube.svg" alt="icon" />
+                            </div>
+                            <div class="col p-1">
+                              <img src="/svg/nav-insta.svg" alt="icon" />
+                            </div>
+                            <div class="p-1 nav-button">
+                              <button class="border-0">Sign in</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="offcanvas-body">
+                  <div class="offcanvas-pages">
+                    <div class="home-icon">
+                      <a href="#">
+                        <img src="/svg/nav-home.svg" alt="icon" />Home</a>
+                    </div>
+                    <div><a href="#"> Videos</a></div>
+                    <div><a href="#"> India</a></div>
+                    <div><a href="#"> Election</a></div>
+                    <div><a href="#"> T20 World Cup</a></div>
+                    <div><a href="#"> World</a></div>
+                    <div><a href="#"> entertainment</a></div>
+                    <div><a href="#"> Sports</a></div>
+                    <div><a href="#"> Tech</a></div>
+                    <div><a href="#"> Explainer</a></div>
+                    <div><a href="#"> Astro</a></div>
+                    <div><a href="#"> Business</a></div>
+                    <div><a href="#"> Health</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="nav-icon">
+              <div class="row align-items-center">
+                <div class="col-md-6 nav-tv">
+                  <a href="">
+                    <img src="/svg/nav-tv.svg" alt="icon" class="w-100" />
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <a href="">
+                    <img src="/svg/nav-search.svg" alt="icon" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-bottom-section">
+        <div class="nav-bottom-section-container container">
+          <div class="d-flex justify-content-between">
+            <div class="home-icon">
+              <a href="#"> <img src="/svg/nav-home.svg" alt="icon" /></a>
+            </div>
+            <div class="logo-icon">
+              <a href="#"><img src="/images/sitelogo.png" alt="img" /></a>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropbtn"> VIDEOS </a>
+
+              <span class="dropdown-content">
+                <div class="dropdown-nav d-flex justify-content-between">
+                  <div class=" "><a href="#"> VIDEOS </a></div>
+                  <div class=" "><a href="#"> INDIA </a></div>
+                  <div class=" "><a href="#"> ELECTIONS </a></div>
+                  <div class=" "><a href="#"> T20 WORLD CUP </a></div>
+                  <div class=" "><a href="#"> WORLD </a></div>
+                  <div class=" "><a href="#"> ENTERTAINMENT </a></div>
+                  <div class=" "><a href="#"> SPORTS </a></div>
+                  <div class=" "><a href="#"> TECH </a></div>
+                  <div class=" "><a href="#"> EXPLAINER </a></div>
+                  <div class=" "><a href="#"> ASTRO </a></div>
+                  <div class=" "><a href="#"> BUSINESS </a></div>
+                  <div class=" "><a href="#"> HEALTH </a></div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/pic1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card3.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 mini-nav-cards">
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropbtn"> INDIA </a>
+
+              <span class="dropdown-content2">
+                <div class="dropdown-nav d-flex justify-content-between">
+                  <div class=" "><a href="#"> VIDEOS </a></div>
+                  <div class=" "><a href="#"> INDIA </a></div>
+                  <div class=" "><a href="#"> ELECTIONS </a></div>
+                  <div class=" "><a href="#"> T20 WORLD CUP </a></div>
+                  <div class=" "><a href="#"> WORLD </a></div>
+                  <div class=" "><a href="#"> ENTERTAINMENT </a></div>
+                  <div class=" "><a href="#"> SPORTS </a></div>
+                  <div class=" "><a href="#"> TECH </a></div>
+                  <div class=" "><a href="#"> EXPLAINER </a></div>
+                  <div class=" "><a href="#"> ASTRO </a></div>
+                  <div class=" "><a href="#"> BUSINESS </a></div>
+                  <div class=" "><a href="#"> HEALTH </a></div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/pic1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card3.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 mini-nav-cards">
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropbtn"> ELECTIONS </a>
+
+              <span class="dropdown-content3">
+                <div class="dropdown-nav d-flex justify-content-between">
+                  <div class=" "><a href="#"> VIDEOS </a></div>
+                  <div class=" "><a href="#"> INDIA </a></div>
+                  <div class=" "><a href="#"> ELECTIONS </a></div>
+                  <div class=" "><a href="#"> T20 WORLD CUP </a></div>
+                  <div class=" "><a href="#"> WORLD </a></div>
+                  <div class=" "><a href="#"> ENTERTAINMENT </a></div>
+                  <div class=" "><a href="#"> SPORTS </a></div>
+                  <div class=" "><a href="#"> TECH </a></div>
+                  <div class=" "><a href="#"> EXPLAINER </a></div>
+                  <div class=" "><a href="#"> ASTRO </a></div>
+                  <div class=" "><a href="#"> BUSINESS </a></div>
+                  <div class=" "><a href="#"> HEALTH </a></div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/pic1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card3.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 mini-nav-cards">
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropbtn"> T20 WORLD CUP </a>
+
+              <span class="dropdown-content4">
+                <div class="dropdown-nav d-flex justify-content-between">
+                  <div class=" "><a href="#"> VIDEOS </a></div>
+                  <div class=" "><a href="#"> INDIA </a></div>
+                  <div class=" "><a href="#"> ELECTIONS </a></div>
+                  <div class=" "><a href="#"> T20 WORLD CUP </a></div>
+                  <div class=" "><a href="#"> WORLD </a></div>
+                  <div class=" "><a href="#"> ENTERTAINMENT </a></div>
+                  <div class=" "><a href="#"> SPORTS </a></div>
+                  <div class=" "><a href="#"> TECH </a></div>
+                  <div class=" "><a href="#"> EXPLAINER </a></div>
+                  <div class=" "><a href="#"> ASTRO </a></div>
+                  <div class=" "><a href="#"> BUSINESS </a></div>
+                  <div class=" "><a href="#"> HEALTH </a></div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/pic1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card3.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 mini-nav-cards">
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropbtn"> WORLD </a>
+
+              <span class="dropdown-content5">
+                <div class="dropdown-nav d-flex justify-content-between">
+                  <div class=" "><a href="#"> VIDEOS </a></div>
+                  <div class=" "><a href="#"> INDIA </a></div>
+                  <div class=" "><a href="#"> ELECTIONS </a></div>
+                  <div class=" "><a href="#"> T20 WORLD CUP </a></div>
+                  <div class=" "><a href="#"> WORLD </a></div>
+                  <div class=" "><a href="#"> ENTERTAINMENT </a></div>
+                  <div class=" "><a href="#"> SPORTS </a></div>
+                  <div class=" "><a href="#"> TECH </a></div>
+                  <div class=" "><a href="#"> EXPLAINER </a></div>
+                  <div class=" "><a href="#"> ASTRO </a></div>
+                  <div class=" "><a href="#"> BUSINESS </a></div>
+                  <div class=" "><a href="#"> HEALTH </a></div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/pic1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card3.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 mini-nav-cards">
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropbtn"> ENTERTAINMENT </a>
+
+              <span class="dropdown-content6">
+                <div class="dropdown-nav d-flex justify-content-between">
+                  <div class=" "><a href="#"> VIDEOS </a></div>
+                  <div class=" "><a href="#"> INDIA </a></div>
+                  <div class=" "><a href="#"> ELECTIONS </a></div>
+                  <div class=" "><a href="#"> T20 WORLD CUP </a></div>
+                  <div class=" "><a href="#"> WORLD </a></div>
+                  <div class=" "><a href="#"> ENTERTAINMENT </a></div>
+                  <div class=" "><a href="#"> SPORTS </a></div>
+                  <div class=" "><a href="#"> TECH </a></div>
+                  <div class=" "><a href="#"> EXPLAINER </a></div>
+                  <div class=" "><a href="#"> ASTRO </a></div>
+                  <div class=" "><a href="#"> BUSINESS </a></div>
+                  <div class=" "><a href="#"> HEALTH </a></div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/pic1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card3.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 mini-nav-cards">
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropbtn"> SPORTS </a>
+
+              <span class="dropdown-content7">
+                <div class="dropdown-nav d-flex justify-content-between">
+                  <div class=" "><a href="#"> VIDEOS </a></div>
+                  <div class=" "><a href="#"> INDIA </a></div>
+                  <div class=" "><a href="#"> ELECTIONS </a></div>
+                  <div class=" "><a href="#"> T20 WORLD CUP </a></div>
+                  <div class=" "><a href="#"> WORLD </a></div>
+                  <div class=" "><a href="#"> ENTERTAINMENT </a></div>
+                  <div class=" "><a href="#"> SPORTS </a></div>
+                  <div class=" "><a href="#"> TECH </a></div>
+                  <div class=" "><a href="#"> EXPLAINER </a></div>
+                  <div class=" "><a href="#"> ASTRO </a></div>
+                  <div class=" "><a href="#"> BUSINESS </a></div>
+                  <div class=" "><a href="#"> HEALTH </a></div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/pic1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card3.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 mini-nav-cards">
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropbtn"> TECH </a>
+
+              <span class="dropdown-content8">
+                <div class="dropdown-nav d-flex justify-content-between">
+                  <div class=" "><a href="#"> VIDEOS </a></div>
+                  <div class=" "><a href="#"> INDIA </a></div>
+                  <div class=" "><a href="#"> ELECTIONS </a></div>
+                  <div class=" "><a href="#"> T20 WORLD CUP </a></div>
+                  <div class=" "><a href="#"> WORLD </a></div>
+                  <div class=" "><a href="#"> ENTERTAINMENT </a></div>
+                  <div class=" "><a href="#"> SPORTS </a></div>
+                  <div class=" "><a href="#"> TECH </a></div>
+                  <div class=" "><a href="#"> EXPLAINER </a></div>
+                  <div class=" "><a href="#"> ASTRO </a></div>
+                  <div class=" "><a href="#"> BUSINESS </a></div>
+                  <div class=" "><a href="#"> HEALTH </a></div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/pic1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card3.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 mini-nav-cards">
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropbtn"> EXPLAINER </a>
+
+              <span class="dropdown-content9">
+                <div class="dropdown-nav d-flex justify-content-between">
+                  <div class=" "><a href="#"> VIDEOS </a></div>
+                  <div class=" "><a href="#"> INDIA </a></div>
+                  <div class=" "><a href="#"> ELECTIONS </a></div>
+                  <div class=" "><a href="#"> T20 WORLD CUP </a></div>
+                  <div class=" "><a href="#"> WORLD </a></div>
+                  <div class=" "><a href="#"> ENTERTAINMENT </a></div>
+                  <div class=" "><a href="#"> SPORTS </a></div>
+                  <div class=" "><a href="#"> TECH </a></div>
+                  <div class=" "><a href="#"> EXPLAINER </a></div>
+                  <div class=" "><a href="#"> ASTRO </a></div>
+                  <div class=" "><a href="#"> BUSINESS </a></div>
+                  <div class=" "><a href="#"> HEALTH </a></div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/pic1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card3.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 mini-nav-cards">
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropbtn"> ASTRO </a>
+
+              <span class="dropdown-content10">
+                <div class="dropdown-nav d-flex justify-content-between">
+                  <div class=" "><a href="#"> VIDEOS </a></div>
+                  <div class=" "><a href="#"> INDIA </a></div>
+                  <div class=" "><a href="#"> ELECTIONS </a></div>
+                  <div class=" "><a href="#"> T20 WORLD CUP </a></div>
+                  <div class=" "><a href="#"> WORLD </a></div>
+                  <div class=" "><a href="#"> ENTERTAINMENT </a></div>
+                  <div class=" "><a href="#"> SPORTS </a></div>
+                  <div class=" "><a href="#"> TECH </a></div>
+                  <div class=" "><a href="#"> EXPLAINER </a></div>
+                  <div class=" "><a href="#"> ASTRO </a></div>
+                  <div class=" "><a href="#"> BUSINESS </a></div>
+                  <div class=" "><a href="#"> HEALTH </a></div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/pic1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card3.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 mini-nav-cards">
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropbtn"> BUSINESS </a>
+
+              <span class="dropdown-content11">
+                <div class="dropdown-nav d-flex justify-content-between">
+                  <div class=" "><a href="#"> VIDEOS </a></div>
+                  <div class=" "><a href="#"> INDIA </a></div>
+                  <div class=" "><a href="#"> ELECTIONS </a></div>
+                  <div class=" "><a href="#"> T20 WORLD CUP </a></div>
+                  <div class=" "><a href="#"> WORLD </a></div>
+                  <div class=" "><a href="#"> ENTERTAINMENT </a></div>
+                  <div class=" "><a href="#"> SPORTS </a></div>
+                  <div class=" "><a href="#"> TECH </a></div>
+                  <div class=" "><a href="#"> EXPLAINER </a></div>
+                  <div class=" "><a href="#"> ASTRO </a></div>
+                  <div class=" "><a href="#"> BUSINESS </a></div>
+                  <div class=" "><a href="#"> HEALTH </a></div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/pic1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card3.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 mini-nav-cards">
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropbtn"> HEALTH </a>
+
+              <span class="dropdown-content12">
+                <div class="dropdown-nav d-flex justify-content-between">
+                  <div class=" "><a href="#"> VIDEOS </a></div>
+                  <div class=" "><a href="#"> INDIA </a></div>
+                  <div class=" "><a href="#"> ELECTIONS </a></div>
+                  <div class=" "><a href="#"> T20 WORLD CUP </a></div>
+                  <div class=" "><a href="#"> WORLD </a></div>
+                  <div class=" "><a href="#"> ENTERTAINMENT </a></div>
+                  <div class=" "><a href="#"> SPORTS </a></div>
+                  <div class=" "><a href="#"> TECH </a></div>
+                  <div class=" "><a href="#"> EXPLAINER </a></div>
+                  <div class=" "><a href="#"> ASTRO </a></div>
+                  <div class=" "><a href="#"> BUSINESS </a></div>
+                  <div class=" "><a href="#"> HEALTH </a></div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/pic1.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card">
+                      <img src="/images/card3.jpg" class="card-img-top" alt="img" />
+                      <div class="card-body">
+                        <p class="nav-content-text">
+                          Some quick example text to build on the card title
+                          and make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 mini-nav-cards">
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3 second-section">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                        </div>
+                        <div class="col-md-8 ps-2">
+                          <div class="card-body">
+                            <p class="nav-content-text">
+                              What is rare sensorineural nerve hearing loss?
+                              Know causes, symptoms and more
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropbtn">
+                <img src="/svg/nav-dots.svg" alt="icon" /></a>
+
+              <span class="dropdown-content13">
+                <div class="dropdown-nav">
+                  <div class=" "><a href="#"> VIDEOS </a></div>
+                  <div class=" "><a href="#"> INDIA </a></div>
+                  <div class=" "><a href="#"> ELECTIONS </a></div>
+                  <div class=" "><a href="#"> T20 WORLD CUP </a></div>
+                  <div class=" "><a href="#"> WORLD </a></div>
+                  <div class=" "><a href="#"> ENTERTAINMENT </a></div>
+                  <div class=" "><a href="#"> SPORTS </a></div>
+                  <div class=" "><a href="#"> TECH </a></div>
+                  <div class=" "><a href="#"> EXPLAINER </a></div>
+                  <div class=" "><a href="#"> ASTRO </a></div>
+                  <div class=" "><a href="#"> BUSINESS </a></div>
+                  <div class=" "><a href="#"> HEALTH </a></div>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- old nav -->
+
+
+
+
+
+
+  <!-- latest-top news section -->
+  <section>
+    <div class="home-second-section special-margin-top">
+      <div class="home-second-section-container container">
+        <div class="row">
+          <!-- left -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="top-section">
+              <div class="top-section d-flex align-items-center">
+                <div class="">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <img src="/svg/ribbon.svg" alt="icon" />
+                      </div>
+                      <div class="heading2">LATEST NEWS</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="row-cols-md-1 g-2">
+              <div class="col-md-12">
+                <div class="card">
+                  <img src="/images/card4.jpg" class="side-image" alt="icon" />
+                  <div class="card-body  ps-2 pt-2">
+                    <p class="card-small-text">india</p>
+                    <p class="body-content-text">
+                      Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <hr size="3" />
+
+              <div class="col-md-12">
+                <div class="card">
+                  <img src="/images/kp_oli.jpg" class="side-image" alt="icon" />
+                  <div class="card-body  ps-2 pt-2">
+                    <p class="card-small-text">india</p>
+                    <p class="body-content-text">
+                      Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <hr size="3" />
+
+              <div class="col-md-12">
+                <div class="card">
+                  <img src="/images/Taylor-Swift.webp" class="side-image" alt="icon" />
+                  <div class="card-body  ps-2 pt-2">
+                    <p class="card-small-text">india</p>
+                    <p class="body-content-text">
+                      Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- middle -->
+          <div class="col-12 col-md-6 col-lg-6 left-border right-border mt-lg-0 mt-2">
+            <div class="top-section">
+              <div class="top-section d-flex align-items-center">
+                <div class="">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <img src="/svg/ribbon.svg" alt="icon" />
+                      </div>
+                      <div class="heading2">top news</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="bottom-section sticky-scrollbar">
+              <div class="row-cols-md-1 g-2">
+                <div class="card ">
+                  <div class="row g-2">
+                    <div class="col-md-4">
+                      <img src="/images/pic1.jpg" class="img-fluid" alt="img">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <p class="card-small-text mb-2">technology</p>
+                        <h5 class="body-content-text">
+                          Cybercriminals adopting new methods for fraud, survey
+                          reveals shocking insights: Details here
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="card ">
+                  <div class="row g-2">
+                    <div class="col-md-4">
+                      <img src="/images/card4.jpg" class="img-fluid" alt="img">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <p class="card-small-text mb-2">technology</p>
+                        <h5 class="body-content-text">
+                          Cybercriminals adopting new methods for fraud, survey
+                          reveals shocking insights: Details here
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="card ">
+                  <div class="row g-2">
+                    <div class="col-md-4">
+                      <img src="/images/earth-moon.jpg" class="img-fluid" alt="img">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <p class="card-small-text mb-2">technology</p>
+                        <h5 class="body-content-text">
+                          Cybercriminals adopting new methods for fraud, survey
+                          reveals shocking insights: Details here
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="card ">
+                  <div class="row g-2">
+                    <div class="col-md-4">
+                      <img src="/images/alien1.webp" class="img-fluid" alt="img">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <p class="card-small-text mb-2">technology</p>
+                        <h5 class="body-content-text">
+                          Cybercriminals adopting new methods for fraud, survey
+                          reveals shocking insights: Details here
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="card ">
+                  <div class="row g-2">
+                    <div class="col-md-4">
+                      <img src="/images/card4.jpg" class="img-fluid" alt="img">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <p class="card-small-text mb-2">technology</p>
+                        <h5 class="body-content-text">
+                          Cybercriminals adopting new methods for fraud, survey
+                          reveals shocking insights: Details here
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="card ">
+                  <div class="row g-2">
+                    <div class="col-md-4">
+                      <img src="/images/Taylor-Swift.webp" class="img-fluid" alt="img">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <p class="card-small-text mb-2">technology</p>
+                        <h5 class="body-content-text">
+                          Cybercriminals adopting new methods for fraud, survey
+                          reveals shocking insights: Details here
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="card ">
+                  <div class="row g-2">
+                    <div class="col-md-4">
+                      <img src="/images/pic1.jpg" class="img-fluid" alt="img">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <p class="card-small-text mb-2">technology</p>
+                        <h5 class="body-content-text">
+                          Cybercriminals adopting new methods for fraud, survey
+                          reveals shocking insights: Details here
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- right -->
+          <div class="col-12 col-lg-3 mt-lg-0 mt-2">
+            <div class="top-section">
+              <div class="top-section d-flex align-items-center">
+                <div class="">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <img src="/svg/ribbon.svg" alt="icon" />
+                      </div>
+                      <div class="heading2">most read</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="bottom-section sticky-scrollbar mt-2">
+              <div class="row row-cols-lg-1 row-cols-md-3 g-2">
+                <div class="row mt-2 bottom-border pb-lg-2 pb-3">
+                  <div class="col-md-5 p-0">
+                    <img src="/images/pic1.jpg" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mt-2 bottom-border pb-lg-2 pb-3">
+                  <div class="col-md-5 p-0">
+                    <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mt-2 bottom-border pb-lg-2 pb-3">
+                  <div class="col-md-5 p-0">
+                    <img src="/images/card5.jpg" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-2 mt-lg-0">
+                <div class="top-section">
+                  <div class="top-section d-flex align-items-center">
+                    <div class="">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <img src="/svg/ribbon.svg" alt="icon" />
+                          </div>
+                          <div class="heading2">top picks</div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- carousel -->
+                <div id="carouselExampleIndicators" class="carousel slide auto-carousel" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="carousel-card">
+                        <img src="/images/card5.jpg" class="card-img-top" alt="img" />
+                        <div class="carousel-card-body">
+                          <p class=" ps-2 pt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="carousel-card">
+                        <img src="/images/kp_oli.jpg" class="card-img-top" alt="img" />
+                        <div class="carousel-card-body">
+                          <p class=" ps-2 pt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="carousel-card">
+                        <img src="/images/card4.jpg" class="card-img-top" alt="img" />
+                        <div class="carousel-card-body">
+                          <p class=" ps-2 pt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="section-hr"></div> -->
+  </section>
+
+  <!-- Production section -->
+  <section>
+    <div class="production-section">
+      <div class="production-section-container container">
+        <div class="row">
+          <!-- left section -->
+          <div class="col-md-9 right-border">
+            <div class="top-section d-flex align-items-center">
+              <div class="col-md-3">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <div>
+                      <img src="/svg/ribbon.svg" alt="icon" />
+                    </div>
+                    <div class="heading2">production</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col style-line"></div>
+              <div class="style-icon col-md-1">
+                <img src="/svg/single-right-arrow.svg" alt="icon" />
+              </div>
+            </div>
+
+            <div class="bottom-section  ">
+              <div class="row">
+                <div class="col-lg-7 col-12 right-border">
+                  <div class="card text-white">
+                    <img src="/images/kp_oli.jpg" class="card-img" alt="img" />
+                    <div class="card-img-overlay">
+                      <p class="card-title">
+                        This is a wider card with supporting text below as a
+                        natural lead-in to additional content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-5 col-12 mt-lg-0  ">
+                  <div class="row row-cols-lg-1 row-cols-2 g-2">
+
+
+                    <div class="row bottom-border mt-4 mt-lg-2 pb-2 g-2">
+                      <div class="col-md-4">
+                        <img src="/images/pic1.jpg" class="img-fluid  " alt="img" />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="body-content-text">
+                            PM Modi caught off guard as Nitish Kumar
+                            unexpectedly
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row bottom-border mt-4 mt-lg-2 pb-2 g-2">
+                      <div class="col-md-4">
+                        <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="body-content-text">
+                            PM Modi caught off guard as Nitish Kumar
+                            unexpectedly
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row  bottom-border mt-4 mt-lg-2 pb-2 g-2">
+                      <div class="col-md-4">
+                        <img src="/images/earth-moon.jpg" class="img-fluid  " alt="img" />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="body-content-text">
+                            PM Modi caught off guard as Nitish Kumar
+                            unexpectedly
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row bottom-border mt-4 mt-lg-2 pb-2 g-2">
+                      <div class="col-md-4">
+                        <img src="/images/alien1.webp" class="img-fluid  " alt="img" />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="body-content-text">
+                            PM Modi caught off guard as Nitish Kumar
+                            unexpectedly
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row bottom-border mt-4 mt-lg-2 pb-2 g-2">
+                      <div class="col-md-4">
+                        <img src="/images/card3.jpg" class="img-fluid  " alt="img" />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="body-content-text">
+                            PM Modi caught off guard as Nitish Kumar
+                            unexpectedly
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row bottom-border mt-4 mt-lg-2 pb-2 g-2">
+                      <div class="col-md-4">
+                        <img src="/images/card5.jpg" class="img-fluid  " alt="img" />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="body-content-text">
+                            PM Modi caught off guard as Nitish Kumar
+                            unexpectedly
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- right section -->
+          <div class="col-md-3 mt-lg-0 mt-2">
+            <div class="top-section d-flex align-items-center">
+              <div class="col-lg-4 col-6">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <div>
+                      <img src="/svg/ribbon.svg" alt="icon" />
+                    </div>
+                    <div class="heading2">auto</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col style-line"></div>
+              <div class="style-icon col-md-1">
+                <img src="/svg/single-right-arrow.svg" alt="icon" />
+              </div>
+            </div>
+            <div class="bottom-section  sticky-scrollbar">
+              <div class="row row-cols-md-1 g-2">
+                <div class="row mt-2">
+                  <div class="col-md-4 p-0">
+                    <img src="/images/Taylor-Swift.webp" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="row  ">
+                  <div class="col-md-4 p-0">
+                    <img src="/images/kp_oli.jpg" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="row  ">
+                  <div class="col-md-4 p-0">
+                    <img src="/images/pic1.jpg" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="row  ">
+                  <div class="col-md-4 p-0">
+                    <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="row  ">
+                  <div class="col-md-4 p-0">
+                    <img src="/images/card5.jpg" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="section-hr"></div> -->
+  </section>
+
+  <!-- finance and market -->
+  <section>
+    <div class="finance-market mt-lg-3 mt-0">
+      <div class="finance-market-container container">
+        <div class="row">
+          <!-- finance -->
+          <div class="col-lg-9 col-12 right-border">
+            <div class="bottom-section">
+              <!-- upper section -->
+              <div class="top-section d-flex align-items-center">
+                <div class="col-md-2">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <img src="/svg/ribbon.svg" alt="icon" />
+                      </div>
+                      <div class="heading2">finance</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col style-line"></div>
+                <div class="style-icon col-md-1">
+                  <img src="/svg/single-right-arrow.svg" alt="icon" />
+                </div>
+              </div>
+              <div class="row pb-3">
+                <div class="col-md-5 right-border">
+                  <div class="row row-cols-md-1 g-2">
+                    <div class="col-md-12">
+                      <div class="card border-0">
+                        <img src="/images/card4.jpg" class="side-image" alt="icon" />
+                        <div class="card-body  ps-2 pt-2">
+                          <div class="d-flex card-upper-section align-items-center">
+                            <p class="card-small-text">india</p>
+                            <img src="/svg/small-circle.svg" alt="icon" class="ms-1" />
+                            <p class="card-small-text ms-1">3 years ago</p>
+                          </div>
+
+                          <p class="body-content-text">
+                            Lorem ipsum dolor sit amet, conse ctetur
+                            adipiscing elit
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr size="3" />
+
+                    <div class="col-md-12">
+                      <div class="card border-0">
+                        <img src="/images/card4.jpg" class="side-image" alt="icon" />
+                        <div class="card-body  ps-2 pt-2">
+                          <div class="d-flex card-upper-section align-items-center">
+                            <p class="card-small-text">india</p>
+                            <img src="/svg/small-circle.svg" alt="icon" class="ms-1" />
+                            <p class="card-small-text ms-1">3 years ago</p>
+                          </div>
+                          <p class="body-content-text">
+                            Lorem ipsum dolor sit amet, conse ctetur
+                            adipiscing elit
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-7">
+                  <div class="card text-white">
+                    <img src="/images/pic1.jpg" class="card-img" alt="img" />
+                    <div class="card-img-overlay">
+                      <p class="card-title">
+                        This is a wider card with supporting text below as a
+                        natural lead-in to additional content. This content is
+                        a little bit longer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- lower card section -->
+              <div class="top-section d-flex align-items-center  ">
+                <div class="col-md-2">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <img src="/svg/ribbon.svg" alt="icon" />
+                      </div>
+                      <div class="heading2">finance-2</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col style-line"></div>
+                <div class="style-icon col-md-1">
+                  <img src="/svg/single-right-arrow.svg" alt="icon" />
+                </div>
+              </div>
+              <div class="row  ">
+                <!-- cards -->
+                <div class="col-md-12">
+                  <div class="row row-cols-md-3 g-4">
+                    <div class="col-md-4 right-border">
+                      <div class="card border-0">
+                        <img src="/images/card4.jpg" class="entertainment-card-image" alt="icon" />
+                        <div class="card-body  ps-2 pt-2">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 right-border">
+                      <div class="card border-0">
+                        <img src="/images/pic1.jpg" class="entertainment-card-image" alt="icon" />
+                        <div class="card-body  ps-2 pt-2">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="card border-0">
+                        <img src="/images/alien1.webp" class="entertainment-card-image" alt="icon" />
+                        <div class="card-body  ps-2 pt-2">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section-hr"></div>
+
+                  <div class="row row-cols-md-3 g-4">
+                    <div class="col-md-4 right-border">
+                      <div class="card border-0">
+                        <img src="/images/card5.jpg" class="entertainment-card-image" alt="icon" />
+                        <div class="card-body  ps-2 pt-2">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 right-border">
+                      <div class="card border-0">
+                        <img src="/images/card4.jpg" class="entertainment-card-image" alt="icon" />
+                        <div class="card-body  ps-2 pt-2">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="card border-0">
+                        <img src="/images/pic1.jpg" class="entertainment-card-image" alt="icon" />
+                        <div class="card-body  ps-2 pt-2">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- market -->
+          <div class="col-lg-3 col-12 market-section">
+            <div class="top-section d-flex align-items-center">
+              <div class="col-lg-5 col-2">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <div>
+                      <img src="/svg/ribbon.svg" alt="icon" />
+                    </div>
+                    <div class="heading2">market</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col style-line"></div>
+              <div class="style-icon col-md-1">
+                <img src="/svg/single-right-arrow.svg" alt="icon" />
+              </div>
+            </div>
+
+            <div class="bottom-section   sticky-scrollbar">
+              <div class="row row-cols-md-3 g-4">
+                <!-- cards -->
+                <div class="col-lg-12 col-md-4 col-12 bottom-border">
+                  <div class="card border-0">
+                    <img src="/images/kp_oli.jpg" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                      <p class="heading3">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 col-md-4 col-12 bottom-border">
+                  <div class="card border-0">
+                    <img src="/images/Taylor-Swift.webp" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                      <p class="heading3">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 col-md-4 col-12">
+                  <div class="card border-0">
+                    <img src="/images/card4.jpg" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                      <p class="heading3">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="section-hr"></div> -->
+  </section>
+
+  <!-- auto card section-->
+  <section>
+    <div class="auto-card-section">
+      <div class="auto-card-section-container container">
+        <!-- top section -->
+        <div class="top-section d-flex align-items-center">
+          <div class="col-lg-1 col-2">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <div>
+                  <img src="/svg/ribbon.svg" alt="icon" />
+                </div>
+                <div class="heading2">Auto</div>
+              </div>
+            </div>
+          </div>
+          <div class="col style-line"></div>
+          <div class="style-icon col-md-1">
+            <img src="/svg/single-right-arrow.svg" alt="icon" />
+          </div>
+        </div>
+
+        <!-- bottom-section -->
+        <div class="bottom-section  ">
+          <div class="d-flex flex-column justify-content-between">
+            <div class="row g-3">
+              <div class="col-lg-6 col-12">
+                <div class="card text-white">
+                  <img src="/images/pic1.jpg" class="card-img" alt="img" />
+                  <div class="card-img-overlay">
+                    <div>
+                      <div class="d-flex card-upper-section align-items-center">
+                        <p class="card-small-text">india</p>
+                        <img src="/svg/small-circle.svg" alt="icon" class="ms-1" />
+                        <p class="card-small-text ms-1">3 years ago</p>
+                      </div>
+                      <p class="card-title">
+                        This is a wider card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-12">
+                <div class="row row-cols-2 row-cols-md-2 g-3">
+                  <div class="col">
+                    <div class="card text-white">
+                      <img src="/images/alien1.webp" class="card-img" alt="img" />
+                      <div class="card-img-overlay">
+
+                        <p class="card-title s-content">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit
+                        </p>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card">
+                      <img src="/images/Taylor-Swift.webp" class="card-img" alt="img" />
+                      <div class="card-img-overlay">
+                        <h4 class="card-title s-content">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card">
+                      <img src="/images/card4.jpg" class="card-img" alt="img" />
+                      <div class="card-img-overlay">
+                        <h4 class="card-title s-content">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card">
+                      <img src="/images/kp_oli.jpg" class="card-img" alt="img" />
+                      <div class="card-img-overlay">
+                        <h4 class="card-title s-content">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="section-hr"></div> -->
+  </section>
+
+  <!-- web / tech section -->
+  <section>
+    <div class="web-section">
+      <div class="web-section-container container">
+        <div class="top-section d-flex align-items-center">
+          <div class="col-lg-1 col-2">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <div>
+                  <img src="/svg/ribbon.svg" alt="icon" />
+                </div>
+                <div class="heading2">tech</div>
+              </div>
+            </div>
+          </div>
+          <div class="col style-line"></div>
+          <div class="style-icon col-md-1">
+            <img src="/svg/single-right-arrow.svg" alt="icon" />
+          </div>
+        </div>
+
+        <div class="bottom-section mt-2">
+          <div class="row g-3">
+            <div class="col-md-3 right-border">
+              <div class="feature-section">
+                <div class="card">
+                  <div class="feature-thumbnail">
+                    <a href="">
+                      <img src="/images/pic1.jpg" alt="img" />
+                    </a>
+                  </div>
+                  <div class="card-img-overlay">
+                    <p class="card-title content">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                  </div>
+                  <div class="feature-icon">
+                    <img src="/svg/small-carousel.svg" alt="icon" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 right-border">
+              <div class="feature-section">
+                <div class="card">
+                  <div class="feature-thumbnail">
+                    <a href="">
+                      <img src="/images/earth.jpg" alt="img" />
+                    </a>
+                  </div>
+                  <div class="card-img-overlay">
+                    <p class="card-title content">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                  </div>
+                  <div class="feature-icon">
+                    <img src="/svg/small-carousel.svg" alt="icon" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 right-border">
+              <div class="feature-section">
+                <div class="card">
+                  <div class="feature-thumbnail">
+                    <a href="">
+                      <img src="/images/kp_oli.jpg" alt="img" />
+                    </a>
+                  </div>
+                  <div class="card-img-overlay">
+                    <p class="card-title content">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                  </div>
+                  <div class="feature-icon">
+                    <img src="/svg/small-carousel.svg" alt="icon" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="feature-section">
+                <div class="card">
+                  <div class="feature-thumbnail">
+                    <a href="">
+                      <img src="/images/galaxy.jpg" alt="img" />
+                    </a>
+                  </div>
+                  <div class="card-img-overlay">
+                    <p class="card-title content">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                  </div>
+                  <div class="feature-icon">
+                    <img src="/svg/small-carousel.svg" alt="icon" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="section-hr mt-5"></div> -->
+  </section>
+
+  <!-- profile and offer -->
+  <section>
+    <div class="profile-offer">
+      <div class="profile-offer-container container">
+        <div class="row">
+          <!-- profile -->
+          <div class="col-lg-9 col-12 right-border">
+            <div class="top-section d-flex align-items-center">
+              <div class="col-md-2">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <div>
+                      <img src="/svg/ribbon.svg" alt="icon" />
+                    </div>
+                    <div class="heading2">profile</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col style-line"></div>
+              <div class="style-icon col-md-1">
+                <img src="/svg/single-right-arrow.svg" alt="icon" />
+              </div>
+            </div>
+
+            <div class="bottom-section  ">
+              <div class="row">
+                <!-- left side  -->
+                <div class="col-md-6 right-border mb-lg-0 mb-2">
+                  <div class="card text-white border-0">
+                    <img src="/images/galaxy.jpg" class="card-img" alt="img" />
+                    <div class="card-img-overlay">
+                      <p class="card-title">
+                        This is a wider card with supporting text below as a
+                        natural lead-in to additional content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- right side -->
+                <div class="col-md-6">
+                  <div class="row row-cols-md-1 g-2">
+                    <div class="card text-white border-0 bottom-border">
+                      <img src="/images/earth-moon.jpg" class="card-img" alt="img" />
+                      <div class="card-img-overlay">
+                        <p class="card-title">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="card text-white border-0">
+                      <img src="/images/alien1.webp" class="card-img" alt="img" />
+                      <div class="card-img-overlay">
+                        <p class="card-title">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- offer -->
+          <div class="col-lg-3 col-12 offer-section">
+            <div class="top-section d-flex align-items-center">
+              <div class="col-lg-4 col-2">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <div>
+                      <img src="/svg/ribbon.svg" alt="icon" />
+                    </div>
+                    <div class="heading2">offer</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col style-line"></div>
+              <div class="style-icon col-md-1">
+                <img src="/svg/single-right-arrow.svg" alt="icon" />
+              </div>
+            </div>
+
+            <div class="bottom-section  ">
+              <div class="row">
+                <div class="col-lg-12 col-md-6 col-12">
+                  <div class="card border-0">
+                    <img src="/images/card4.jpg" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                      <p class="heading3">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="col-lg-12 col-md-6 col-12">
+                  <div class="card border-0">
+                    <img src="/images/pic1.jpg" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                      <p class="heading3">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="section-hr"></div> -->
+  </section>
+
+  <!-- entertainment - community section -->
+  <section>
+    <div class="entertainment-section">
+      <div class="entertainment-section-container container">
+        <div class="top-section d-flex align-items-center">
+          <div class="col-lg-2 col-3">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <div>
+                  <img src="/svg/ribbon.svg" alt="icon" />
+                </div>
+                <div class="heading2">entertainment</div>
+              </div>
+            </div>
+          </div>
+          <div class="col style-line"></div>
+          <div class="style-icon col-md-1">
+            <img src="/svg/single-right-arrow.svg" alt="icon" />
+          </div>
+        </div>
+
+        <div class="bottom-section mt-2 ">
+          <div class="row">
+            <!-- left -->
+            <div class="col-md-3 right-border">
+
+              <div class="row row-cols-md-1 g-2">
+                <div class="row ">
+                  <div class="col-md-5 p-0">
+                    <img src="/images/Taylor-Swift.webp" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="row  ">
+                  <div class="col-md-5 p-0">
+                    <img src="/images/alien1.webp" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="row  ">
+                  <div class="col-md-5 p-0">
+                    <img src="/images/earth-moon.jpg" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="row  ">
+                  <div class="col-md-5 p-0">
+                    <img src="/images/pic1.jpg" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="row  ">
+                  <div class="col-md-5 p-0">
+                    <img src="/images/alien1.webp" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="row  ">
+                  <div class="col-md-5 p-0">
+                    <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!-- middle -->
+            <div class="col-md-6 right-border">
+              <div class="row row-cols-1 row-cols-md-2 g-4 ">
+                <div class="col-12 col-lg-6 right-border">
+                  <div class="card h-100">
+                    <img src="/images/alien1.webp" class="card-img-top" alt="img">
+                    <div class="card-body">
+                      <p>Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eiusmod tempor incididunt ut
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 ">
+                  <div class="card h-100">
+                    <img src="/images/earth-moon.jpg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                      <p>Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eiusmod tempor incididunt ut
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr size="3">
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col right-border">
+                  <div class="card h-100">
+                    <img src="images/Taylor-Swift.webp" class="card-img-top" alt="img">
+                    <div class="card-body">
+                      <p>Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eiusmod tempor incididunt ut
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/pic1.jpg" class="card-img-top" alt="image-svg">
+                    <div class="card-body">
+                      <p>Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eiusmod tempor incididunt ut
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- right -->
+            <div class="col-md-3">
+
+              <div class="row row-cols-md-1 g-2 ms-lg-1 ms-0">
+                <div class="row mt-2">
+                  <div class="col-md-5 p-0">
+                    <img src="/images/Taylor-Swift.webp" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="row  ">
+                  <div class="col-md-5 p-0">
+                    <img src="/images/alien1.webp" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="row  ">
+                  <div class="col-md-5 p-0">
+                    <img src="/images/earth-moon.jpg" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="row  ">
+                  <div class="col-md-5 p-0">
+                    <img src="/images/pic1.jpg" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="row  ">
+                  <div class="col-md-5 p-0">
+                    <img src="/images/alien1.webp" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <hr size="3" />
+
+                <div class="row  ">
+                  <div class="col-md-5 p-0">
+                    <img src="/images/card4.jpg" class="img-fluid  " alt="img" />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="body-content-text">
+                        PM Modi caught off guard as Nitish Kumar unexpectedly
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="section-hr"></div> -->
+  </section>
+
+  <!-- tourism section -->
+  <section>
+    <div class="tourism-section">
+      <div class="tourism-section-container container">
+        <!-- top section -->
+        <div class="top-section">
+          <div class="top-section d-flex align-items-center">
+            <div class="col-md-2">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img src="/svg/ribbon.svg" alt="icon" />
+                  </div>
+                  <div class="heading2">tourism</div>
+                </div>
+              </div>
+            </div>
+            <div class="col style-line"></div>
+            <div class="style-icon col-md-1">
+              <img src="/svg/single-right-arrow.svg" alt="icon" />
+            </div>
+          </div>
+        </div>
+
+        <!-- bottom section -->
+        <div class="bottom-section  ">
+          <!-- upper section -->
+          <div class="row pb-3 bottom-border">
+            <div class="col-md-6 right-border">
+              <div class="card text-white">
+                <img src="/images/pic1.jpg" class="card-img" alt="img" />
+                <div class="card-img-overlay">
+                  <div>
+                    <div class="d-flex card-upper-section align-items-center">
+                      <p class="card-small-text">india</p>
+                      <img src="/svg/small-circle.svg" alt="icon" class="ms-1" />
+                      <p class="card-small-text ms-1">3 years ago</p>
+                    </div>
+                    <p class="card-title">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card text-white">
+                <img src="/images/earth-moon.jpg" class="card-img" alt="img" />
+                <div class="card-img-overlay">
+                  <div>
+                    <div class="d-flex card-upper-section align-items-center">
+                      <p class="card-small-text">india</p>
+                      <img src="/svg/small-circle.svg" alt="icon" class="ms-1" />
+                      <p class="card-small-text ms-1">3 years ago</p>
+                    </div>
+                    <p class="card-title">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- lower section -->
+
+          <div class="row g-4 mt-1">
+            <div class="col-md-3 right-border">
+              <div class="card border-0">
+                <img src="/images/card4.jpg" class="side-image" alt="icon" />
+                <div class="card-body  ps-2 pt-2">
+                  <div class="d-flex card-upper-section align-items-center">
+                    <p class="card-small-text">india</p>
+                    <img src="/svg/small-circle.svg" alt="icon" class="ms-1" />
+                    <p class="card-small-text ms-1">3 years ago</p>
+                  </div>
+
+                  <p class="body-content-text">
+                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 right-border">
+              <div class="card border-0">
+                <img src="/images/Taylor-Swift.webp" class="side-image" alt="icon" />
+                <div class="card-body  ps-2 pt-2">
+                  <div class="d-flex card-upper-section align-items-center">
+                    <p class="card-small-text">india</p>
+                    <img src="/svg/small-circle.svg" alt="icon" class="ms-1" />
+                    <p class="card-small-text ms-1">3 years ago</p>
+                  </div>
+
+                  <p class="body-content-text">
+                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 right-border">
+              <div class="card border-0">
+                <img src="/images/kp_oli.jpg" class="side-image" alt="icon" />
+                <div class="card-body  ps-2 pt-2">
+                  <div class="d-flex card-upper-section align-items-center">
+                    <p class="card-small-text">india</p>
+                    <img src="/svg/small-circle.svg" alt="icon" class="ms-1" />
+                    <p class="card-small-text ms-1">3 years ago</p>
+                  </div>
+
+                  <p class="body-content-text">
+                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card border-0">
+                <img src="/images/card4.jpg" class="side-image" alt="icon" />
+                <div class="card-body  ps-2 pt-2">
+                  <div class="d-flex card-upper-section align-items-center">
+                    <p class="card-small-text">india</p>
+                    <img src="/svg/small-circle.svg" alt="icon" class="ms-1" />
+                    <p class="card-small-text ms-1">3 years ago</p>
+                  </div>
+
+                  <p class="body-content-text">
+                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="section-hr"></div> -->
+  </section>
+
+  <!-- sports card section -->
+  <section>
+    <div class="sports-section">
+      <div class="sports-section-container container">
+        <div class="top-section">
+          <div class="top-section d-flex align-items-center">
+            <div class="col-md-2">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img src="/svg/ribbon.svg" alt="icon" />
+                  </div>
+                  <div class="heading2">sports</div>
+                </div>
+              </div>
+            </div>
+            <div class="col style-line"></div>
+            <div class="style-icon col-md-1">
+              <img src="/svg/single-right-arrow.svg" alt="icon" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-section  ">
+          <div class="row g-4">
+            <div class="col-md-3 right-border">
+              <div class="card card-sports">
+                <img src="/images/kp_oli.jpg" class="card-img-sports" alt="img" />
+                <div class="card-sports-body">
+                  <h5 class="sports-card-title-text">
+                    Lorem ipsum dolor sit amet, conse ctetur adipi
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, conse ctetur adipi scing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua
+                  </p>
+                </div>
+                <div class="card-sports-overlay">
+                  <div>PEOPLE</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 right-border">
+              <div class="card card-sports">
+                <img src="/images/earth-moon.jpg" class="card-img-sports" alt="img" />
+                <div class="card-sports-body">
+                  <h5 class="sports-card-title-text">
+                    Lorem ipsum dolor sit amet, conse ctetur adipi
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, conse ctetur adipi scing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua
+                  </p>
+                </div>
+                <div class="card-sports-overlay">
+                  <div>PEOPLE</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 right-border">
+              <div class="card card-sports">
+                <img src="/images/alien1.webp" class="card-img-sports" alt="img" />
+                <div class="card-sports-body">
+                  <h5 class="sports-card-title-text">
+                    Lorem ipsum dolor sit amet, conse ctetur adipi
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, conse ctetur adipi scing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua
+                  </p>
+                </div>
+                <div class="card-sports-overlay">
+                  <div>PEOPLE</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card card-sports">
+                <img src="/images/earth.jpg" class="card-img-sports" alt="img" />
+                <div class="card-sports-body">
+                  <h5 class="sports-card-title-text">
+                    Lorem ipsum dolor sit amet, conse ctetur adipi
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, conse ctetur adipi scing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua
+                  </p>
+                </div>
+                <div class="card-sports-overlay">
+                  <div>PEOPLE</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="section-hr"></div> -->
+  </section>
+
+  <!-- videos section -->
+  <section>
+    <div class="video-section">
+      <div class="video-section-container container">
+        <div class="top-section d-flex align-items-center">
+          <div class="col-md-2">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <div>
+                  <img src="/svg/ribbon.svg" alt="icon" />
+                </div>
+                <div class="heading2">videos</div>
+              </div>
+            </div>
+          </div>
+          <div class="col style-line"></div>
+          <div class="style-icon col-md-1">
+            <img src="/svg/single-right-arrow.svg" alt="icon" />
+          </div>
+        </div>
+
+        <div class="bottom-section  ">
+
+          <!-- old video section -->
+          <!-- <div class="row">
+            <div class="col-md-3 right-border">
+              <div class="card h-100">
+                <img src="/images/kp_oli.jpg" class="side-image" alt="icon" />
+                <div class="card-body  ps-2 pt-2">
+                  <p class="card-small-text">india</p>
+                  <p class="card-body-text">
+                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                  </p>
+                </div>
+                <div class="overlay-play-img">
+                  <img src="/svg/play-button.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 right-border">
+              <div class="card h-100">
+                <img src="/images/earth-moon.jpg" class="side-image" alt="icon" />
+                <div class="card-body  ps-2 pt-2">
+                  <p class="card-small-text">india</p>
+                  <p class="card-body-text">
+                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                  </p>
+                </div>
+                <div class="overlay-play-img">
+                  <img src="/svg/play-button.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 right-border">
+              <div class="card h-100">
+                <img src="/images/Taylor-Swift.webp" class="side-image" alt="icon" />
+                <div class="card-body  ps-2 pt-2">
+                  <p class="card-small-text">india</p>
+                  <p class="card-body-text">
+                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                  </p>
+                </div>
+                <div class="overlay-play-img">
+                  <img src="/svg/play-button.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card h-100">
+                <img src="/images/earth-moon.jpg" class="side-image" alt="icon" />
+                <div class="card-body  ps-2 pt-2">
+                  <p class="card-small-text">india</p>
+                  <p class="card-body-text">
+                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                  </p>
+                </div>
+                <div class="overlay-play-img">
+                  <img src="/svg/play-button.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+
+          <!-- new swiper section -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/kp_oli.jpg" class="side-image" alt="icon" />
+                    <div class="card-body  ps-2 pt-2">
+                      <p class="card-small-text">india</p>
+                      <p class="card-body-text">
+                        Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                      </p>
+                    </div>
+                    <div class="overlay-play-img">
+                      <img src="/svg/play-button.svg" alt="icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/Taylor-Swift.webp" class="side-image" alt="icon" />
+                    <div class="card-body  ps-2 pt-2">
+                      <p class="card-small-text">india</p>
+                      <p class="card-body-text">
+                        Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                      </p>
+                    </div>
+                    <div class="overlay-play-img">
+                      <img src="/svg/play-button.svg" alt="icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="swiper-slide">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/pic1.jpg" class="side-image" alt="icon" />
+                    <div class="card-body  ps-2 pt-2">
+                      <p class="card-small-text">india</p>
+                      <p class="card-body-text">
+                        Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                      </p>
+                    </div>
+                    <div class="overlay-play-img">
+                      <img src="/svg/play-button.svg" alt="icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="swiper-slide">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/earth-moon.jpg" class="side-image" alt="icon" />
+                    <div class="card-body  ps-2 pt-2">
+                      <p class="card-small-text">india</p>
+                      <p class="card-body-text">
+                        Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                      </p>
+                    </div>
+                    <div class="overlay-play-img">
+                      <img src="/svg/play-button.svg" alt="icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="swiper-slide">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/galaxy.jpg" class="side-image" alt="icon" />
+                    <div class="card-body  ps-2 pt-2">
+                      <p class="card-small-text">india</p>
+                      <p class="card-body-text">
+                        Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                      </p>
+                    </div>
+                    <div class="overlay-play-img">
+                      <img src="/svg/play-button.svg" alt="icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="swiper-slide">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/kp_oli.jpg" class="side-image" alt="icon" />
+                    <div class="card-body  ps-2 pt-2">
+                      <p class="card-small-text">india</p>
+                      <p class="card-body-text">
+                        Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                      </p>
+                    </div>
+                    <div class="overlay-play-img">
+                      <img src="/svg/play-button.svg" alt="icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="swiper-slide">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/alien1.webp" class="side-image" alt="icon" />
+                    <div class="card-body  ps-2 pt-2">
+                      <p class="card-small-text">india</p>
+                      <p class="card-body-text">
+                        Lorem ipsum dolor sit amet, conse ctetur adipiscing elit
+                      </p>
+                    </div>
+                    <div class="overlay-play-img">
+                      <img src="/svg/play-button.svg" alt="icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!-- <div class="section-hr"></div> -->
+  </section>
+
+
+
+
+
+
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-section">
+      <div class="top-footer">
+        <div class="top-footer-container container">
+          <div class="d-flex">
+            <div class="clrprime">India TV :</div>
+            <div class="lists margin-left">
+              <a href="#" class="active">Contact Us</a>
+              <a href="#">About Us</a>
+              <a href="#">Advertise</a>
+              <a href="#">Complaint Redressal</a>
+              <a href="#">In the Press</a>
+              <a href="#">Investors Column</a>
+            </div>
+          </div>
+
+          <div class="d-flex mt-2">
+            <div class="clrprime">Popular Categories :</div>
+            <div class="lists">
+              <a href="#" class="active">Contact Us</a>
+              <a href="#">About Us</a>
+              <a href="#">Advertise</a>
+              <a href="#">Complaint Redressal</a>
+              <a href="#">In the Press</a>
+              <a href="#">Investors Column</a>
+            </div>
+          </div>
+
+          <div class="d-flex   align-items-center justify-content-center">
+            <img src="/svg/footer-youtube.svg" alt="icon" class="ms-3" />
+            <img src="/svg/footer-fb.svg" alt="icon" class="ms-3" />
+
+            <i class="fa-brands fa-x-twitter ms-3 fa-xl"></i>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="bottom-footer-container container">
+          <div class="footer-copyright d-flex justify-content-center">
+            © 2009-2024 Independent News Service. All rights reserved.
+          </div>
+          <div class="lists d-flex justify-content-center">
+            <a href="#" class="active">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Advertise</a>
+            <a href="#">Complaint Redressal</a>
+            <a href="#">In the Press</a>
+            <a href="#">Investors Column</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--  -->
+
+  <script>
+    const navbar = document.getElementById("navigation-bar");
+
+    window.addEventListener("scroll", () => {
+      console.log("hey");
+      if (window.scrollY > 0) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      breakpoints: {
+
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+
+        900: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        }
+
+      },
+    });
+
+
+  </script>
+
+
+  <script src="/js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
